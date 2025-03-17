@@ -1,7 +1,5 @@
 # Agent Communication Protocol + BeeAI platform
 
----
-
 ## Demo 1 - Agent discovery
 
 ### Intro
@@ -78,7 +76,7 @@ beeai run ollama-deep-researcher "what is the most recent quantum error correcti
 beeai run gpt-researcher "what is the most recent quantum error correction code research by IBM?"
 ```
 ---
-### Examples of code
+### Examples of metadata
 
 ```yaml
 
@@ -123,7 +121,7 @@ You can add providers, from local or remote sources:
 beeai provider add file://demo-agent/openai-provider-unmanaged.yaml
 ```
 ---
-### Code
+### Example of wrapping your agents
 
 ```python
 from acp.server.highlevel import Server, Context
@@ -155,7 +153,7 @@ def main():
 ```
 ---
 
-### Code
+### Example of wrapping your agents - OpenAI Agents Framework example
 
 ```python
 from acp.server.highlevel import Server, Context
