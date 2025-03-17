@@ -173,3 +173,4 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 assets/.DS_Store
+.DS_Store
