@@ -92,7 +92,7 @@ mcpTransport: sse
 
 ### Discussion
 
-[https://github.com/i-am-bee/beeai/discussions/344](https://github.com/i-am-bee/beeai/discussions/344)
+- [help to improve ACP Metadata in our open discussion](https://github.com/i-am-bee/beeai/discussions/344)
 
 ---
 ## Demo 2 - Agent Import
@@ -268,8 +268,8 @@ HTTP/WebSockets/Stdio       | (request-response)   |
 
 ```
 
-[documentation online](https://docs.beeai.dev/acp/pre-alpha/architecture#messageinput-messageoutput)
-[ACP discusion](https://github.com/i-am-bee/beeai/discussions/284)
+- [Documentation online](https://docs.beeai.dev/acp/pre-alpha/architecture#messageinput-messageoutput)
+- [ACP discusion](https://github.com/i-am-bee/beeai/discussions/284)
 
 ---
 
