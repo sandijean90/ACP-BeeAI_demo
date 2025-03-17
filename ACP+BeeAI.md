@@ -34,6 +34,8 @@ beeai env setup
 ```bash
 beeai list 
 ```
+
+- To learn more about BeeAI, visit the web [beeai.dev](http://beeai.dev)
 ---
 
 ### Metadata
