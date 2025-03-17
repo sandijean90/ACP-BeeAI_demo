@@ -1,4 +1,4 @@
-# ACP-BeeAI_demo
+# ACP (Agent Communicatin Protocal) + BeeAI, AI Dev 25 Demo session
 Slides in Markdown about the ACP and BeeAI presentation, AI Dev 25 
 
 - [Slides](ACP+BeeAI.md) 
