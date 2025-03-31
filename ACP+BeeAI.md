@@ -249,22 +249,27 @@ ACP reuse in this moment the client-server architecture from MCP via JSON-RPC 2.
 
 ```
 
-TextInput(Input)            +----------------------+
-TextOutput(Output)          |                      |
-MessageInput(Input)         |         ACP          |
-MessageOutput(Output)       |                      |
-....                        +----------------------+
-                                        |
-{                                       v
-  "id": 1,                  .----------------------.
-  "jsonrpc": "2.0",         |      JSON-RPC        |
-  "method": "methodName",   '----------------------'
-  "params": {                           |
-    /* parameters */}                   v
-}                           +----------------------+          
-                            |   HTTP with SSE      |
-HTTP/WebSockets/Stdio       | (request-response)   |
-                            +----------------------+
+                                         < --------------------------- ACP -------------------------- >
+                                                                                                                             
+TextInput(Input)             +----------------------+         +----------------------+         +----------------------+    
+TextOutput(Output)           |                      |         |                      |         |                      |    
+MessageInput(Input)          |        Agent         | <-----> |        Agent         | <-----> |        Agent         |    
+MessageOutput(Output)        |                      |         |                      |         |                      |    ^
+...                          +----------------------+         +----------------------+         +----------------------+    |
+                                         |                                |                                |               |
+{                                        v                                v                                v               | 
+  "id": 1,                   +----------------------+         +----------------------+         +----------------------+    |
+  "jsonrpc": "2.0",          |                      |         |                      |         |                      |    
+  "method": "methodName",    |       JSON-RPC       |         |       JSON-RPC       |         |       JSON-RPC       |   MCP
+  "params": {                |                      |         |                      |         |                      |       
+    /* parameters */}        +----------------------+         +----------------------+         +----------------------+    |   
+}                                       |                                |                                |                |   
+                                        v                                v                                v                |   
+HTTP/WebSockets/Stdio        +----------------------+         +----------------------+         +----------------------+    |   
+                             |                      |         |                      |         |                      |    v   
+                             |        Tools         |         |        Tools         |         |        Tools         |         
+                             |                      |         |                      |         |                      |       
+                             +----------------------+         +----------------------+         +----------------------+         
 
 ```
 
