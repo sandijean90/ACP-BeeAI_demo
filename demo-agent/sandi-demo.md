@@ -133,7 +133,7 @@ brew install i-am-bee/beeai/arize-phoenix
    ```
 2. start the service:
 ```bash
-start arize-phoenix
+brew services start arize-phoenix
    ```
 3. open the gui to see traceability http://localhost:6006
 
