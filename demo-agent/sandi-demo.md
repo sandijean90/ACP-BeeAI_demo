@@ -46,7 +46,10 @@ To get started, fork this repository and creat your own .env file with your open
 ---
 
 ## 🛠 Implementing an Agent
-
+Set your enviorment variables (openai key) in your CLI for the session:
+```bash
+export OPENAI_API_KEY= <API key>
+   ```
 Run the agent locally:
 ```bash
 uv run openai-agent
