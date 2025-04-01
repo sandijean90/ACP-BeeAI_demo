@@ -47,9 +47,9 @@ To get started, fork this repository and creat your own .env file with your open
 
 ## 🛠 Implementing an Agent
 
-Install dependencies:
+Run the agent locally:
 ```bash
-beeai env setup
+uv run openai-agent
    ```
 Your agents should now be started on http://localhost:8000, you can now list agents using the beeai CLI with a few extra parameters:
 
