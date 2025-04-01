@@ -83,7 +83,7 @@ This means that you will have to run the agent server yourself, the platform wil
 
 1. Start the agent server 
 ```bash
-uv run beeai-agents
+uv run openai-agent
    ```
 2. Add the provider to beeai
 ```bash
