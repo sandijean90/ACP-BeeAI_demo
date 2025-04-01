@@ -87,7 +87,7 @@ uv run openai-agent
    ```
 2. Add the provider to beeai
 ```bash
-beeai provider add file://beeai-provider-unmanaged.yaml
+beeai provider add file:/Users/sandi/code/ACP-BeeAI_demo/demo-agent/openai-provider-unmanaged.yaml
    ```
 Note: You will need to start the agent using uv run beeai-agents everytime you want to interact with the agent through the platform.
 
@@ -95,7 +95,7 @@ Note: You will need to start the agent using uv run beeai-agents everytime you w
 
 This means that the beeai platform will manage the agent server process (you won't have to run uv run beeai-agents, the platform will do it for you). All you need to do is to add the local provider manifest:
 ```bash
-beeai provider add file://beeai-provider-local.yaml
+beeai provider add file:/Users/sandi/code/ACP-BeeAI_demo/demo-agent/openai-provider-local.yaml
    ```
 
 The platform will register the server and run it automatically from now on.
@@ -107,7 +107,7 @@ If you want to share your agent with others using the beeai platform, the easies
 
 Modify beeai-provider.yaml manifest with your repository url:
 ```bash
-vim beeai-provider.yaml
+vim /Users/sandi/code/ACP-BeeAI_demo/demo-agent/openai-provider.yaml
    ```
 
 Add provider manifest:
@@ -122,7 +122,7 @@ To update the agent in beeai you'll need to:
 
 ```bash
 beeai provider remove <ID>
-beeai provider add file://beeai-provider-local.yaml
+beeai provider add file:/Users/sandi/code/ACP-BeeAI_demo/demo-agent/openai-provider-local.yaml
    ```
 ---
 ## ⚙️ Running a workflow with 2 agents and traceability:
